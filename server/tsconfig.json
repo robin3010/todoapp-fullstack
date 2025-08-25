@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node10",
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true, 
+    "skipLibCheck": true,
+    "lib": ["esnext"],
+    "types": ["node"],
+    "outDir": "dist",
+        
+    // Stricter Typechecking Options
+    "noUncheckedSideEffectImports": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitAny": true,
+
+    "allowImportingTsExtensions": true,
+    
+    "baseUrl": ".",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+}
+}
